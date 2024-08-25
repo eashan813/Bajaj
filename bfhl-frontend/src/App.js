@@ -25,7 +25,7 @@ function App() {
         data: parsedData
       };
 
-      const result = await axios.post('http://localhost:5000/bfhl', payload);
+      const result = await axios.post('https://bajaj-y4er.onrender.com/bfhl', payload);
       setResponse(result.data);
       setError(null);
     } catch (e) {
